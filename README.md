@@ -58,10 +58,12 @@ Reconstruction Error / MSE (for Autoencoder)
 Confusion Matrix
 
 ✅ 4. Model Comparison
-Technique	Silhouette Score	ARI	Notes
-K-Means	Moderate	0.0791	Fast, but sensitive to outliers
-Hierarchical	Higher than K-Means	0.1775	Better label alignment
-DBSCAN	Highest (1.0)	N/A	Best for handling noise & shape
+| Technique    | Silhouette Score    | ARI    | Notes                           |
+| ------------ | ------------------- | ------ | ------------------------------- |
+| K-Means      | Moderate            | 0.0791 | Fast, but sensitive to outliers |
+| Hierarchical | Higher than K-Means | 0.1775 | Better label alignment          |
+| DBSCAN       | **Highest (1.0)**   | N/A    | Best for handling noise & shape |
+
 
 ✅ 5. Web-Based Prediction App (Django)
 A Django-based frontend allows users to enter S_res and T_res values and receive:
@@ -101,6 +103,9 @@ Edit
 ├── processed_dataset.csv   # Cleaned and prepared dataset
 ├── notebooks/              # Python scripts & experiments
 ├── README.md
+
+Run Code:
+It includes a Django-based web app where users input values (S_res, T_res) and receive real-time dengue risk predictions by running the server using python manage.py runserver.
 
 🚀 Future Scope
 Integration with time-series forecasting (LSTM models)
